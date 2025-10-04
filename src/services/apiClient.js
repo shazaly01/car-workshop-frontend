@@ -3,7 +3,7 @@ import { useAuthStore } from '@/stores/authStore' // سننشئ هذا المخ�
 import router from '@/router' // استيراد الـ router لإعادة التوجيه
 
 // 1. تحديد عنوان الـ API الأساسي من متغيرات البيئة أو استخدام قيمة افتراضية
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 // 2. إنشاء نسخة axios مهيأة
 const apiClient = axios.create({
