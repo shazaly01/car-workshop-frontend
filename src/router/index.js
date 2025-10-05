@@ -53,9 +53,10 @@ const routes = [
     // المسار الرئيسي الذي يحتوي على جميع صفحات التطبيق المحمية
     path: '/',
     component: AppLayout,
+    redirect: '/dashboard', // التوجيه الافتراضي عند الدخول
     children: [
       {
-        path: '',
+        path: 'dashboard',
         name: 'dashboard',
         component: DashboardView, // تم تصحيحها لتعرض لوحة التحكم الفعلية
         meta: { requiresAuth: true },
